@@ -1,0 +1,77 @@
+/* ------------------------ Page Layout ---------------------------- */
+* {
+  padding: 0px;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.centerPage {
+  padding: 15px 19px 0px 19px;
+}
+.textCenter {
+  text-align: center;
+}
+.pageNumber {
+  bottom: 1px;
+  left: 50%;
+  position: absolute;
+}
+.firstimage {
+  height: auto;
+  width: 267px;
+  object-fit: cover;
+}
+.lastimage {
+  height: auto;
+  width: 267px;
+  object-fit: cover;
+}
+.list {
+  list-style: none;
+}
+
+/* ------------------------***** Page Layout *****---------------------------- */
+
+/* ---------------------- Turn Effect ---------------------------  */
+#flipbook .page {
+  background-color: white;
+}
+#flipbook .shadow {
+  box-shadow: 0 4px 9px #666;
+}
+/* ------- For even page number -------  */
+#flipbook .even {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.95, #fff),
+    color-stop(1, #dadada)
+  );
+  background-image: -webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+}
+/* -------**** For even page number ****-------  */
+/* ------- For odd page number -------  */
+#flipbook .odd {
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    color-stop(0.95, #fff),
+    color-stop(1, #dadada)
+  );
+  background-image: -webkit-linear-gradient(right, #fff 95%, #c4c4c4 100%);
+  box-shadow: inset 0 0 5px #666;
+}
+/* -------**** For odd page number ****-------  */
+/* ----------------------***** Turn Effect *****---------------------------  */
+#desktop {
+  display: none;
+}

@@ -1,0 +1,8 @@
+#flipbook {
+  display: none;
+}
+#desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
